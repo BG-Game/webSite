@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+.text-times {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* body {
+  height: 1000vh;
+} */
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.website {
+  width: 25rem;
+}
+
+.desc-1 {
+  margin-top: 1rem;
+  height: 6.25rem;
+  width: 20.5rem;
+  border: solid 2px #db2777;
+  border-radius: 0 3.125rem 3.125rem 0;
+  border-left: none;
+  -webkit-border-radius: 0 50px 50px 0; /* Для старых версий Safari */
+  -moz-border-radius: 0 50px 50px 0; /* Для старых версий Firefox */
+}
+
+.desc-1 section {
+  margin-left: 3rem;
+}
+
+.desc-1 section p {
+  margin-top: 0.938rem;
+  font-size: 0.938rem;
+}
+
+.desc-1 section h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.desc-2 {
+  margin-top: 1rem;
+  margin-left: auto;
+  height: 13rem;
+  width: 22rem;
+  border: solid 2px #db2777;
+  border-radius: 3.125rem 0 0 3.125rem;
+  border-right: none;
+  -webkit-border-radius: 50px 0 0 50px;
+  -moz-border-radius: 50px 0 0 50px;
+  font-weight: 400;
+}
+
+.desc-2 section {
+  margin-left: 3.213rem;
+}
+
+.desc-2 section p {
+  margin-top: 1rem;
+  font-size: 1.094rem;
+}
+
+.desc-2 section ul {
+  margin-top: 1rem;
+}
+
+.desc-2 section ul li:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+.desc-2 section ul li {
+  font-size: 0.938rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #db2777;
+  text-align: center;
+}
+
+.img1 {
+  position: absolute;
+  margin-left: 7rem;
+  /* margin-left: calc(100% - 18rem); */
+  z-index: -2;
+}
+
+.img2 {
+  position: absolute;
+  margin-left: 7rem;
+  /* right: 0; */
+  z-index: -1;
+}
+
+.button_tg {
+  margin-left: 0.6rem;
+  /* width: calc(100vw - 1rem); */
+  height: 4.563rem;
+  background-color: #0088cc;
+  border-radius: 2.5rem;
+  -webkit-border-radius: 40px; /* Для старых браузеров */
+  -moz-border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_tg p {
+  margin-left: 0.25rem;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.462rem;
+}
+
+.href_tg {
+  width: 24rem;
+  position: fixed;
+  z-index: 10;
+  bottom: 2rem;
+  _position: absolute; /* IE6-7 fallback */
+  height: 4.563rem;
+}
+
+/* Добавление префиксов для поддержки flexbox в старых браузерах */
+@supports (-ms-ime-align: auto) {
+  .button_tg {
+    display: -ms-flexbox; /* IE 10 */
+    -ms-align-items: center;
+    -ms-justify-content: center;
+  }
+}
+
+@media (min-height: 610px) and (min-width: 390px) {
+  .href_tg {
+    top: 38.5rem;
+  }
+}
+
+@media (max-width: 400px) and (min-height: 700px) {
+  .href_tg {
+    top: 38.5rem;
+  }
+}
